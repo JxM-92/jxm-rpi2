@@ -14,6 +14,7 @@ clear && echo $"Installing Browser...\n"
 tar -xzf kweb-1.6.9.tar.gz
 cd kweb-1.6.9
 sudo ./debinstall
+sudo ginstall-ytdl
 cd ..
 sudo dpkg -i chromium-codecs-ffmpeg-extra_48.0.2564.82-0ubuntu0.15.04.1.1193_armhf.deb
 sudo dpkg -i chromium-browser-l10n_48.0.2564.82-0ubuntu0.15.04.1.1193_all.deb chromium-browser_48.0.2564.82-0ubuntu0.15.04.1.1193_armhf.deb
