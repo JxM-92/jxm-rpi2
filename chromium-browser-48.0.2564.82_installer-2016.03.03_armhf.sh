@@ -12,3 +12,9 @@ sudo ./debinstall
 cd ..
 sudo dpkg -i chromium-codecs-ffmpeg-extra_48.0.2564.82-0ubuntu0.15.04.1.1193_armhf.deb
 sudo dpkg -i chromium-browser-l10n_48.0.2564.82-0ubuntu0.15.04.1.1193_all.deb chromium-browser_48.0.2564.82-0ubuntu0.15.04.1.1193_armhf.deb
+echo "Do you want to start Chromium-Browser? (Y/N)"
+read answer
+case answer in
+  [Y|y]) xinit -bg black -fg white chromium-browser ;;
+  *) break ;;
+esac
